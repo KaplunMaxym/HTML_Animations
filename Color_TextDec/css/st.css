@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 1.65;
+  font-family: "Roboto" sans-serif;
+  overflow-x: hidden;
+  background-color: #ffff;
+}
+/*
+  1 Гарний width hover
+  2 Плавний перехід коліру
+ */
+
+header{
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(179, 219, 255);
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+li{
+  display: inline-block;
+  margin: 0 10px;
+}
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  /* Робить плавний перехід за 4 мілісекунди */
+  transition: color .4s ease-in-out;
+  position: relative;
+}
+a::after{
+  content: '';
+  width: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.4s ease-in-out;
+}
+a:hover{
+  color: rgb(185, 96, 129);
+}
+a:hover::after{
+  width: 100%;
+}
+
+
+
+
+
+
+
+/* ada */

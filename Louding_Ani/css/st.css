@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 1.65;
+  font-family: "Roboto" sans-serif;
+  overflow-x: hidden;
+  background-color: rgba(49,49,49,1);
+  padding: 0;
+}
+.other_div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.other_div2{
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.louding{
+  height: 700px;
+  width: 700px;
+  border-radius: 40px;
+
+  background:rgba(82,82,82,1);
+  animation: log_ani_1 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info{
+  width: 80%;
+  height: 150px;
+
+  animation: log_ani_2 1s ease;
+  background-color: rgba(65,65,65,1);
+  border-radius: 40px;
+  margin-bottom: 40px;
+}
+.confirn{
+  width: 50%;
+  height: 100px;
+
+  animation: log_ani_3 1s ease;
+  background-color: #ca3e47;
+  border-radius: 40px;
+  margin-bottom: 40px;
+}
+@keyframes log_ani_1 {
+  0%{
+    height: 0px;
+    width: 0px;
+  }
+  50%{
+    height: 700px;
+    width: 700px;
+  }
+}
+@keyframes log_ani_2 {
+  0%{
+    width: 0px;
+  }
+  50%{
+    width: 0px;
+    border-radius: 0;
+  }
+  100%{
+    width: 80%;
+    border-radius: 40px;
+  }
+}
+@keyframes log_ani_3 {
+  0%{
+    width: 0px;
+  }
+  50%{
+    width: 0px;
+    border-radius: 0;
+  }
+  100%{
+    width: 50%;
+    border-radius: 40px;
+  }
+}
+
+
+
+/* ada */
